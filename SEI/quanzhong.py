@@ -19,7 +19,7 @@ import pymysql
 # GPU limited
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-sql_connection = pymysql.connect(host='10.128.16.120', user='root', password='111111',
+sql_connection = pymysql.connect(host='10.6.3.52', user='root', password='111111',
 db='data', port=3306, autocommit=False, charset='utf8')
 
 data = pd.read_csv('./feature_all_.csv', quoting=csv.QUOTE_NONE)
